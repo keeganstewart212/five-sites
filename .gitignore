@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Secrets
+.env
+.env.*
+
+# Windows / WSL
+*:Zone.Identifier
+Thumbs.db
+desktop.ini
+
+# macOS / editors
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Generated outputs
+output/
+
+# Claude Code local settings
+.claude/settings.local.json
