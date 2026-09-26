@@ -26,3 +26,35 @@ Every prompt you send and every reply I give will now be appended to `Transcript
 2. **Everything in the conversation gets saved**, including anything sensitive you paste. The file isn't gitignored, so it will be committed with everything else. If you'd rather keep it local, add `Transcripts.md` to `.gitignore`.
 
 You can review or turn off the logging anytime with `/hooks`.
+
+---
+
+## 2026-09-26 20:24:34 — session `db6ff483`
+
+**User:**
+
+Ask as many questions as needed to clarify scope and outcome
+
+The readme will contain a lot of the context of the end goal.
+
+Let's start with the script that reads the sites.json file and extracts the information. For now, let's view this as a table in terminal
+
+**Claude:**
+
+I've written `score_sites.py`. It reads `sites.json` and `fetch_log.csv`, cleans the data, and prints one table with all 40 sites. I ran it and every spot-check in the plan matched. It doesn't change the original data: the files in `data/` have the same checksums before and after a run, and git shows no changes there. It only opens them to read, and cleaning builds new records.
+
+**Run it:** `python score_sites.py`. It needs `rich`, which is listed in the new `requirements.txt`.
+
+**What the cleaning does:**
+- **Nordholm headroom** is converted from kW to MW, and the original figure stays visible, e.g. `2.20 (2200 kW)`.
+- **Vendor fallback:** 8 sites have no gridmap headroom because the pull hit a `503 upstream timeout`. They use the vendor estimate instead, shown in yellow and flagged with its ±40% band and the reason gridmap is missing.
+- **Excluded sites:** S-033 is inside a protected area, and S-024 and S-036 have no land-registry record (`404 parcel not found`). They stay in the table but are dimmed and marked `EXCLUDED`.
+- **Owner status** comes from the most recent dated note that has one, not the last note in the list. This is the structured field only; Claude hasn't read the notes yet.
+- Staleness is left out for now, as you asked.
+
+**Things the scoring step will need to handle:**
+- **S-008 and S-019** have no headroom and no distance, no vendor estimate, and the fetch log gives no reason. Both have plenty of land and good owner status, so how we treat missing data (the three modes in the README) will decide whether they rank.
+- **The 8 vendor-fallback sites also have no substation distance.** The vendor only estimates headroom, so criterion C2 will be missing for every one of them.
+- **S-020** has 4 notes and its latest owner status is `refused`. Sites with long note histories are where the Claude step is most likely to find something that changes the score.
+
+Nothing is committed yet. `Transcripts.md` also has changes, which come from your transcript hook.
