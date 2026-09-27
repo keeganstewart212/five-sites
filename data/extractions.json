@@ -1,0 +1,700 @@
+{
+  "S-001": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Local energy co-op wrote to the council backing the project.",
+        "value": "supportive"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "8d0ceb7d1852178916d24356beed56ad0f51341953e821abd60e1b8c2a1f9d38",
+    "model": "claude-opus-5"
+  },
+  "S-002": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Neighbours we spoke to were indifferent.",
+        "value": "neutral"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "477c963c7088edcd8c4b56e061dbaad6df1dfc22064c45f18a795b5ab32adc97",
+    "model": "claude-opus-5"
+  },
+  "S-003": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Council planning committee minutes record support for local storage on this plot.",
+        "value": "supportive"
+      },
+      "other_findings": [
+        {
+          "finding": "Owner demands a 12% revenue share as a condition.",
+          "quote": "Wants 12% revenue share."
+        }
+      ],
+      "owner_status": {
+        "quote": "Owner signed the letter of intent.",
+        "value": "loi_signed"
+      },
+      "reserve_concern": null
+    },
+    "key": "f0b5da836443671e8bc2bd4e80bf075aa18245fe72f338994b67f8ab8ae5d14a",
+    "model": "claude-opus-5"
+  },
+  "S-004": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Neighbours we spoke to were indifferent.",
+        "value": "neutral"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Owner signed the letter of intent.",
+        "value": "loi_signed"
+      },
+      "reserve_concern": null
+    },
+    "key": "7b1ad1b488c32e2e3ca19911c0d60d22bcb1498a0669b5f87261d488b18786db",
+    "model": "claude-opus-5"
+  },
+  "S-005": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "",
+        "value": "unknown"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "4f6ff66213c0e92b7ccd84b17bc7afc1b28959598df7a6fde91967f939390783",
+    "model": "claude-opus-5"
+  },
+  "S-006": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Council planning committee minutes record support for local storage on this plot.",
+        "value": "supportive"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Owner signed the letter of intent.",
+        "value": "loi_signed"
+      },
+      "reserve_concern": null
+    },
+    "key": "7d7467cbde3de5b1e9d820a691ae148953f500c76bc0cf39f2ca343b264691a0",
+    "model": "claude-opus-5"
+  },
+  "S-007": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
+        "value": "supportive"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Owner signed the letter of intent.",
+        "value": "loi_signed"
+      },
+      "reserve_concern": null
+    },
+    "key": "79b4433946e1f74a28e6250eae0143e09e01fb9784777e695870c91ac6d21957",
+    "model": "claude-opus-5"
+  },
+  "S-008": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Local energy co-op wrote to the council backing the project.",
+        "value": "supportive"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Owner signed the letter of intent.",
+        "value": "loi_signed"
+      },
+      "reserve_concern": null
+    },
+    "key": "33f427f50c856faa68a5a1ad80862f879370b26603514ebfaa5185504a96f5ad",
+    "model": "claude-opus-5"
+  },
+  "S-009": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
+        "value": "supportive"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Owner signed the letter of intent. Owner very keen.",
+        "value": "loi_signed"
+      },
+      "reserve_concern": {
+        "quote": "Municipal ecologist says the northern third of the plot falls inside the Esker Meadows reserve designated in 2024. Needs checking before we go further."
+      }
+    },
+    "key": "bcf831525e3014626e588cfbce2f9ed0ae7dfffc22682fc3fe6531d9ed6e269e",
+    "model": "claude-opus-5"
+  },
+  "S-010": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Council has no formal position yet",
+        "value": "neutral"
+      },
+      "other_findings": [
+        {
+          "finding": "Council's position is contingent on the noise report, suggesting a potential noise condition on approval.",
+          "quote": "officer said 'depends on the noise report'"
+        }
+      ],
+      "owner_status": {
+        "quote": "Owner signed the letter of intent.",
+        "value": "loi_signed"
+      },
+      "reserve_concern": null
+    },
+    "key": "4d8c9b31600368372a6d585ab9f07ea99032dd3a6dfb3d86ba71907e578497cd",
+    "model": "claude-opus-5"
+  },
+  "S-011": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Local energy co-op wrote to the council backing the project.",
+        "value": "supportive"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Owner signed the letter of intent.",
+        "value": "loi_signed"
+      },
+      "reserve_concern": null
+    },
+    "key": "0c1d8f62efcd157bbaf7e76fdbff6994858f6b74571ec47443d15e66d06195f7",
+    "model": "claude-opus-5"
+  },
+  "S-012": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "",
+        "value": "unknown"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "28644aba02ef6d5b6220cad772f1783edcf3522a2b5826e8a85b3cca7f94a519",
+    "model": "claude-opus-5"
+  },
+  "S-013": {
+    "extraction": {
+      "area_claim": {
+        "m2": 700.0,
+        "quote": "Southern half was sold for housing last year; roughly 700 m² remains."
+      },
+      "community_sentiment": {
+        "quote": "Council planning committee minutes record support for local storage on this plot.",
+        "value": "supportive"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "ddf6e38fc2d5143a20edec6d56e3d684e9ea419c7f84834f7f29588b5b41978e",
+    "model": "claude-opus-5"
+  },
+  "S-014": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
+        "value": "supportive"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "7a39dce67198eeb97dd324ab5ec93b29907b3f3086747519a63e58b2f531cd5c",
+    "model": "claude-opus-5"
+  },
+  "S-015": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Local energy co-op wrote to the council backing the project.",
+        "value": "supportive"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "be0b4afa41ed53823a78b5f700bda0da9072332fe81cc12360210665033c54ed",
+    "model": "claude-opus-5"
+  },
+  "S-016": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Council has no formal position yet",
+        "value": "neutral"
+      },
+      "other_findings": [
+        {
+          "finding": "Council's position is conditional on the noise report, so noise assessment may be a gating factor.",
+          "quote": "officer said 'depends on the noise report'"
+        }
+      ],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "0862ce48f45d8d3454b9de68e70c437296d297806e55ffdfd9ae8c03cdfff49e",
+    "model": "claude-opus-5"
+  },
+  "S-017": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Neighbours we spoke to were indifferent.",
+        "value": "neutral"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "191b9d632e3b021019376e2553aa2bcdc9af47e7e7752976c66c454ebd31e190",
+    "model": "claude-opus-5"
+  },
+  "S-018": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Council planning committee minutes record support for local storage on this plot.",
+        "value": "supportive"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Owner signed the letter of intent.",
+        "value": "loi_signed"
+      },
+      "reserve_concern": null
+    },
+    "key": "deb764ea32c579718aa81e0e718f1f7beb367d8ca8c6c206271ea94e89bc13b2",
+    "model": "claude-opus-5"
+  },
+  "S-019": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "",
+        "value": "unknown"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "2f2dd9ce8d7cca48b1ee79c75eb036d73f888c00140d838ea170e08be240bb1f",
+    "model": "claude-opus-5"
+  },
+  "S-020": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Local energy co-op wrote to the council backing the project.",
+        "value": "supportive"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Owner declined to lease. Board voted against. Revisit in 2027.",
+        "value": "refused"
+      },
+      "reserve_concern": null
+    },
+    "key": "8bcb6c732c3cf90eccefb6568722e4633725b02c274e3141f1cd182251d01e16",
+    "model": "claude-opus-5"
+  },
+  "S-021": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Council has no formal position yet",
+        "value": "neutral"
+      },
+      "other_findings": [
+        {
+          "finding": "Council's position is contingent on the noise report, suggesting noise assessment/mitigation will be a gating condition for approval.",
+          "quote": "officer said 'depends on the noise report'"
+        }
+      ],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "6b5cf9b5154ee69c2b90069e3ca57089b072fdf678cf016f3bed204301af93a9",
+    "model": "claude-opus-5"
+  },
+  "S-022": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "",
+        "value": "unknown"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "364efa627966ae1acdd69c6017ccd426fb27995462c810ca2ef394850ae098ec",
+    "model": "claude-opus-5"
+  },
+  "S-023": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "",
+        "value": "unknown"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Owner not contacted yet.",
+        "value": "not_contacted"
+      },
+      "reserve_concern": null
+    },
+    "key": "921ea2ad2850254bdf8be28596033b22c8941bf36c04423b18b94fa637964faa",
+    "model": "claude-opus-5"
+  },
+  "S-025": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Local energy co-op wrote to the council backing the project.",
+        "value": "supportive"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "9a757806e360608607187e64f211e09618e4e161bd531f95d484b27842b4c1fa",
+    "model": "claude-opus-5"
+  },
+  "S-026": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Council planning committee minutes record support for local storage on this plot.",
+        "value": "supportive"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "f47efea14561c2ba38c2eb4210a7006cb162f94d213b18a2b3be1cd4b5b2433c",
+    "model": "claude-opus-5"
+  },
+  "S-027": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Council has no formal position yet",
+        "value": "neutral"
+      },
+      "other_findings": [
+        {
+          "finding": "Council support appears conditional on the noise report outcome.",
+          "quote": "officer said 'depends on the noise report'"
+        }
+      ],
+      "owner_status": {
+        "quote": "Owner signed the letter of intent.",
+        "value": "loi_signed"
+      },
+      "reserve_concern": null
+    },
+    "key": "3b0bb40fc4b23ce8d28b294e71b609ad70da4a214e42530b8e1d10c28c29f771",
+    "model": "claude-opus-5"
+  },
+  "S-028": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Local energy co-op wrote to the council backing the project.",
+        "value": "supportive"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Owner signed the letter of intent.",
+        "value": "loi_signed"
+      },
+      "reserve_concern": null
+    },
+    "key": "c272ccc55ea3e7ce7c5a13ba8e695dca62ad3602df13d09855eca9f028f20ac2",
+    "model": "claude-opus-5"
+  },
+  "S-029": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
+        "value": "supportive"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "bfee5887608bd6decc0b4ca2f2ebed998148fdf174b87c8e8526912458041eeb",
+    "model": "claude-opus-5"
+  },
+  "S-030": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Residents' association has started a petition against 'industrial batteries' next to the school.",
+        "value": "opposed"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "80e893d0f6516c82631429a21e2ee04a310cb17ac1eb8a76f2eae1cf4adcc987",
+    "model": "claude-opus-5"
+  },
+  "S-031": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "",
+        "value": "unknown"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Owner signed the letter of intent.",
+        "value": "loi_signed"
+      },
+      "reserve_concern": null
+    },
+    "key": "6320fec305582587f21d9cab4c4650432426ea7396c5a31eb484c1914cdde5de",
+    "model": "claude-opus-5"
+  },
+  "S-032": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "",
+        "value": "unknown"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "e28806dd8fa20f82b931e61c52dd583c71a2099c7dc8e12e71c081c6b64b440c",
+    "model": "claude-opus-5"
+  },
+  "S-033": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "",
+        "value": "unknown"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "e86974467a4e474153edc621adf6494e7871d96e8527b41361278b545b013a74",
+    "model": "claude-opus-5"
+  },
+  "S-034": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Neighbours we spoke to were indifferent.",
+        "value": "neutral"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "21ad9f8df9d2f6ac135374f9a38b2b5f4f3e07ecaef28c3dffad7b9d4aa7cf91",
+    "model": "claude-opus-5"
+  },
+  "S-035": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Neighbours we spoke to were indifferent.",
+        "value": "neutral"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Owner not contacted yet.",
+        "value": "not_contacted"
+      },
+      "reserve_concern": null
+    },
+    "key": "925ad2d13c6525c5841f285382fa04cfa4503cd5e038ac8a98f9f90c67a17367",
+    "model": "claude-opus-5"
+  },
+  "S-036": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "",
+        "value": "unknown"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "No idea who owns it.",
+        "value": "not_contacted"
+      },
+      "reserve_concern": null
+    },
+    "key": "b4c5a19eca1766674bcd7676cfb46c66e7121942398bbf0a231c0a866c7514d9",
+    "model": "claude-opus-5"
+  },
+  "S-037": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Met the ward councillor; she is openly in favour and offered to speak at the hearing.",
+        "value": "supportive"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "95b67077116bfd835372f9d9eb006022a6dfd16c297fdf6ca78494999142544a",
+    "model": "claude-opus-5"
+  },
+  "S-038": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "",
+        "value": "unknown"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "b5f8377a3d38408d05a1e5c8adf5851bd21ee8de04f06a25209630eb7d405ad7",
+    "model": "claude-opus-5"
+  },
+  "S-039": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "",
+        "value": "unknown"
+      },
+      "other_findings": [],
+      "owner_status": {
+        "quote": "Owner not contacted yet.",
+        "value": "not_contacted"
+      },
+      "reserve_concern": null
+    },
+    "key": "195a7564da56eb51cb3386657d5bf48f152be777bd3d0bc42c1207067fcd57ee",
+    "model": "claude-opus-5"
+  },
+  "S-040": {
+    "extraction": {
+      "area_claim": null,
+      "community_sentiment": {
+        "quote": "Councillor raised fire-safety objections at last month's meeting; expect a fight.",
+        "value": "opposed"
+      },
+      "other_findings": [
+        {
+          "finding": "Fire-safety concerns raised by a councillor may translate into planning conditions or opposition.",
+          "quote": "Councillor raised fire-safety objections at last month's meeting; expect a fight."
+        }
+      ],
+      "owner_status": {
+        "quote": "Good first call with the owner, sending heads of terms.",
+        "value": "in_talks"
+      },
+      "reserve_concern": null
+    },
+    "key": "c1ad26ebaf6cdb2fac2f1af642c471de8c1630f5a0dcc61f85f3011017ce9db1",
+    "model": "claude-opus-5"
+  }
+}
