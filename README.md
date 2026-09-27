@@ -9,6 +9,17 @@ Some rules apply in every script:
 - A note can only overrule the land registry **if the note is newer than the registry record**. Otherwise the note is ignored.
 - Every site stays in the table. Killed and removed sites are listed after the ranked ones, with the reason in the **Status** column.
 
+## Recorded decisions at a glance
+
+| Rule | Script 1 (High risk) | Script 2 (Medium risk) | Script 3 (Low risk) |
+|---|---|---|---|
+| Registry says protected (S-033) | Killed | Killed | Killed |
+| No land-registry record (S-024, S-036) | Kept, gaps averaged | Removed | Removed |
+| Missing values | Vendor estimate, then average | Vendor estimate, then average | Removed |
+| Newer note changes area (S-013, ~700 m²) | Use the note | Use the note | Removed |
+| Newer note suggests a reserve (S-009) | Flagged only | Removed | Removed |
+| Duplicate parcel (S-017 + S-031) | Merged, latest note wins | Merged, latest note wins | Both removed (assumption) |
+
 ## Script 1 (High risk): `score_high_risk.py`
 
 **Fair to every site.** It uses gridmap and the land registry first. When gridmap has no headroom, it falls back to the vendor estimate (±40%, flagged). When a value is still missing, it fills the gap with the **average across all sites**. Each row shows how many criteria were averaged (`Avg #`) and which ones (`Averaged fields`).
@@ -69,6 +80,19 @@ python score_low_risk.py            # Script 3 (Low risk)
 
 Claude's reads of the notes are cached in `data/extractions.json`, so the scripts run without an API key. The table is wide, so use a full-width terminal.
 
+## Web page
+
+The public page lets the reader pick a risk profile and then shows that profile's top 5 sites as cards, highest score first. Tap a card to see all of its data. The page is static: `build_site.py` runs the same scoring code as the scripts and writes `_site/data.json` next to the files in `web/`. The page never calls the Anthropic API.
+
+```bash
+python build_site.py                      # writes _site/
+python -m http.server -d _site 8000       # preview at http://localhost:8000
+```
+
+**Hosting (GitHub Pages).** `.github/workflows/pages.yml` rebuilds and deploys the page on every push to `main`. One-time setup:
+1. In the repo, go to **Settings → Pages → Source** and choose **GitHub Actions**.
+2. Optional: add an `ANTHROPIC_API_KEY` repository secret. It's only needed if the field notes or the prompt change. Otherwise the committed `data/extractions.json` cache is used. The build fails rather than publishing sites whose notes weren't read.
+
 ## Files
 
 | File | What it is |
@@ -77,5 +101,6 @@ Claude's reads of the notes are cached in `data/extractions.json`, so the script
 | `sites_core.py` | Shared loading, kW→MW, rubric, averaging, kill/removal rules, table |
 | `extract_notes.py`, `prompts/extract_notes.md` | Claude step and its prompt, with quote verification |
 | `data/extractions.json` | Cached Claude output, re-verified on every run |
+| `build_site.py`, `web/`, `.github/workflows/pages.yml` | Static results page and its GitHub Pages deploy |
 | `CREATE_SCRIPT_PROMPT.md` | Original build spec/prompt for the scripts |
 | `Questions.md` | Questions and assumptions written before any scoring code |

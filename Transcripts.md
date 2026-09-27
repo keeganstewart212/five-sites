@@ -240,3 +240,118 @@ I ran all three scripts. Here are the top five per risk category, with scores:
 5. S-006 (76.0)
 
 S-003 and S-018 are in the top five of all three scripts. S-006 takes 5th in Script 3 only because it ties with S-007 at 76.0 and comes first by ID.
+
+---
+
+## 2026-09-27 11:41:36 — session `bae9bd6a`
+
+**User:**
+
+Document the recorded decisions table above that was created in the README file, it easily communicates the technical decisions
+
+**Claude:**
+
+I've added the decisions table to `README.md` as a new section, **"Recorded decisions at a glance"**, just before the per-script write-ups. It compares all six rules across Script 1 (High risk), Script 2 (Medium risk) and Script 3 (Low risk), naming the affected sites (S-033, S-024/S-036, S-013, S-009, S-017 + S-031). Maren gets the overview first, and the detailed reasoning for each script follows underneath.
+
+---
+
+## 2026-09-27 11:49:14 — session `bae9bd6a`
+
+**User:**
+
+Create a frontend that we will host
+
+User journey:
+On the first screen the user will select their risk profile with a short description under each profile on what it means. Keep it simple and short
+After selection, we display the top 5 results from the respective risk profile/script in card format with the most critical data highlights, this can be an accordion that expands the card to show the rest of the data on the card.
+
+Sort these cards in order of highest score
+
+Ask me questions
+
+**Claude:**
+
+What do you want to clarify? It could be the hosting choice, how the page gets its data, what the collapsed cards show, or what else the page should include.
+
+---
+
+## 2026-09-27 11:51:03 — session `bae9bd6a`
+
+**User:**
+
+The problem with Github pages is that it is static, which is why I am considering Vercel. Do you see a work-around to then using Github pages instead?
+
+**Claude:**
+
+The page is built, but I couldn't view it in a browser: headless Chromium needs system libraries that require sudo. So the JavaScript hasn't been run yet. What I did check:
+- `build_site.py` runs and its top five for each profile match the terminal scripts.
+- The badges come out right: S-009 gets "Possible protected area" in the High profile, S-011 gets "Vendor estimate ±40%" and "1 field averaged", and the merged Brekke card gets "Merged duplicate".
+- The local server returns `index.html`, `data.json` and `app.js` without errors.
+
+**Please click through it:** a preview server is still running, so open **http://localhost:8765** in your Windows browser (WSL passes localhost through). You'll see:
+- **Screen 1:** three risk-profile cards, labelled "Script N (X risk)", each with a one-line description. The High, Medium and Low cards have red, amber and green edges.
+- **Screen 2:** the top five as cards, highest score first. Each shows rank, name, ID, the score out of 100 with a bar, and the warning badges. Tapping a card expands it to show the site facts, the owner and community quotes with dates, the C1–C6 score breakdown (averaged rows in amber), and the flags. A "Switch risk profile" button goes back, and the browser back button and links like `#high` also work.
+
+It's plain HTML, CSS and JavaScript with no framework, designed for a phone first, and the page never calls the Claude API.
+
+**To go live on GitHub Pages:**
+1. Commit and push. I haven't done that; say the word if you want me to.
+2. In the repo, go to **Settings → Pages → Source** and choose **GitHub Actions**. From then on, every push to `main` rebuilds and deploys the page.
+3. Optionally, add `ANTHROPIC_API_KEY` as a repository secret. It's only needed if the field notes or the prompt change, because the saved Claude results are committed. If notes can't be read, the build stops rather than publishing sites with missing data.
+
+New files are `build_site.py`, `web/index.html`, `web/style.css`, `web/app.js` and `.github/workflows/pages.yml`. I also added `_site/` to `.gitignore`, added a "Web page" section to the README, and made a one-line change to `extract_notes.py` so the build can tell when the notes weren't read.
+
+---
+
+## 2026-09-27 12:01:50 — session `bae9bd6a`
+
+**User:**
+
+Improve the copy on the risk profile selection, we want to clearly state why it is high risk to the client and also story tell: Remove the script/dev language and make it about the profiles and end goal of the user. Example) The high risk treats all sites fairly by allowing them to be part of the calculation even with missing data. So, we try increase coverage for suppliers which may include great sites. Something to this extent
+
+**Claude:**
+
+I rewrote the risk-profile copy so it's about the user's goal, with no mention of scripts. I rebuilt the page and the preview is still running at **http://localhost:8765**, but I couldn't view it in a browser here, so please check how the longer copy fits on your phone. Each card now has a risk label, a short name, what the profile does for you, and why it carries that risk:
+
+**HIGH RISK · Cast the widest net**
+Every site gets a fair chance. Where data is missing, we fill the gap with an estimate or the average of all sites, so no potentially great location is left out just because its paperwork is incomplete.
+*Why it's high risk: some sites may look strong only because of the gaps we filled in. You could spend time and money evaluating a site that turns out to be unsuitable. The upside is finding a standout site that others would have missed.*
+
+**MEDIUM RISK · Balanced shortlist**
+Sites can still use estimates where grid data is missing, but each one must have a confirmed land-registry record, and anything that might sit on protected land is left out.
+*Why it's medium risk: some figures are still estimates (grid capacity could be off by up to 40%), but the biggest deal-breakers are screened out before you see them.*
+
+**LOW RISK · Only what's confirmed**
+Only sites backed by complete, official grid and land-registry data, plus a clear landowner and community position from our team's visits. Nothing is estimated.
+*Why it's low risk: every number is verified, so your evaluation budget goes to solid sites. The trade-off: strong sites with even one missing figure are left out.*
+
+A few related wording changes:
+- **Intro line** under "Choose a risk profile": "How much uncertainty are you comfortable with when choosing which sites to evaluate?"
+- **Results heading:** for example "Cast the widest net: top 5 sites", followed by "High risk · 38 of 40 candidate sites qualified under this profile."
+- **Where the copy lives:** in `PROFILES` in `build_site.py`, which makes it easy to edit. The styling for the new label and "why" line is in `web/style.css`.
+
+The rankings are unchanged. The expanded cards still use some technical terms, like "1 field averaged" and the source names in the score breakdown. Want me to put those in plain language too?
+
+---
+
+## 2026-09-27 12:03:15 — session `bae9bd6a`
+
+**User:**
+
+No, keep the card expansion the same with the metadata. Only the risk profile selection should tell a story. Keep it short
+
+**Claude:**
+
+I shortened the risk-profile copy and rebuilt the page; the preview at http://localhost:8765 has the new text. The expanded cards are unchanged, technical details included.
+
+**HIGH RISK · Cast the widest net**
+Every site gets a fair chance: gaps in the data are filled with estimates, so hidden gems aren't missed.
+*Risk: a site may only look good because of the filled gaps, costing time and money to evaluate.*
+
+**MEDIUM RISK · Balanced shortlist**
+Estimates are allowed, but every site needs a land-registry record and no protected-land doubts.
+*Risk: some figures are still estimates, but the deal-breakers are screened out.*
+
+**LOW RISK · Only what's confirmed**
+Only sites with complete, verified data. Nothing is estimated.
+*Risk: minimal, but strong sites with even one gap are left out.*

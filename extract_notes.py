@@ -236,6 +236,7 @@ def extract_all(raw_sites):
 
         verified = verify(raw, notes)
         verified["flags"] = extra_flags + verified["flags"]
+        verified["extraction_failed"] = bool(extra_flags)
         results[site_id] = verified
 
     return results
