@@ -1,5 +1,7 @@
 # Five Sites: which ranking to trust, and why
 
+Time taken: 4.5 Hours
+
 Maren, this page explains the three rankings we can show the sponsor. All three use the same rubric (C1 headroom 30 · C2 distance 15 · C3 landowner 20 · C4 community 10 · C5 flood 15 · C6 area 10, scored out of 100). They differ in **how much risk we take on missing, estimated or unverified data**. Pick the one that matches how much risk the sponsor will accept.
 
 Some rules apply in every script:
